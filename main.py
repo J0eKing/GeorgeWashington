@@ -25,7 +25,7 @@ def increaseuser(user):
         dictionary[user] = 1
 
 bot = Bot(command_prefix='.')
-TOKEN = 'NzM1MDg1NzcxODE5NzEyNTgy.XxbH-Q.tTdweZddzIBnyA9Z2gkeGHrvmTM'
+
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
 readtomap()
@@ -52,5 +52,5 @@ async def on_message(message: discord.Message):
             addtofile(dictionary)
             await message.channel.send(mess.format(ordinal(dictionary[message.author.name])))
 
-		
+TOKEN = os.getenv('TOKEN')		
 bot.run(TOKEN)
