@@ -29,7 +29,7 @@ bot = Bot(command_prefix='.')
 
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
 readtomap()
-mess = "This is the {} time you've messaged the bot on the wrong fucking discord channel. You fucking donkey. The #bot channel exists for a fucking reason, retard"
+mess = "This is the {} time you've messaged the bot on the wrong fucking discord channel. You fucking donkey. The #bot channel exists for a fucking reason"
 
 @bot.event
 async def on_ready():
