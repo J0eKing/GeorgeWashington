@@ -1,5 +1,2 @@
 Ares::28
-Poop::18
-Ar3s::7
-Arεs::20
-Sasuke_Rinnegan::1
+
