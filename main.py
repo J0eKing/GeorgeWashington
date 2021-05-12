@@ -6,6 +6,7 @@ import os
 import get
 
 x = []
+channelID = 841773185128464415
 message = """**BEEP BOOP FREE GAME ALERT**
 
 **{}**
@@ -16,13 +17,13 @@ Next free game is
 
 
 def get_last_game():
-    with open("stats.txt", "r") as f:
+    with open("game.txt", "r") as f:
         last_game = f.readline()
     return last_game
 
 
 def set_last_game(name):
-    with open("stats.txt", "w") as f:
+    with open("game.txt", "w") as f:
         f.write(name)
 
 
@@ -45,7 +46,7 @@ def check_if_new():
 async def check_new_game():
     new = check_if_new()
     if new:
-        channel = bot.get_channel(841773185128464415)
+        channel = bot.get_channel(channelID)
         await channel.send(message.format(x[0], x[1], x[2]))
 
 
