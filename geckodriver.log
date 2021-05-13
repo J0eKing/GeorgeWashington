@@ -1,0 +1,88 @@
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.039: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.039: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.040: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+1620916875292	Marionette	INFO	Marionette enabled
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.559: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.559: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.560: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.562: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.562: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:64522): Gtk-WARNING **: 16:41:15.562: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(/usr/lib/firefox/firefox:64700): Gtk-WARNING **: 16:41:15.617: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:64700): Gtk-WARNING **: 16:41:15.617: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:64700): Gtk-WARNING **: 16:41:15.618: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(/usr/lib/firefox/firefox:64727): Gtk-WARNING **: 16:41:15.711: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:64727): Gtk-WARNING **: 16:41:15.711: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:64727): Gtk-WARNING **: 16:41:15.712: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620916876069	Marionette	INFO	Listening on port 43871
+1620916876118	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:64820): Gtk-WARNING **: 16:41:16.602: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:64820): Gtk-WARNING **: 16:41:16.602: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:64820): Gtk-WARNING **: 16:41:16.603: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+1620916888939	Marionette	INFO	Stopped listening on port 43871
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.324: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.324: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.325: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+1620919261574	Marionette	INFO	Marionette enabled
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.839: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.839: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.839: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.841: Theme parsing error: gtk.css:27:16: not a number
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.841: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(firefox:107742): Gtk-WARNING **: 17:21:01.842: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(/usr/lib/firefox/firefox:107923): Gtk-WARNING **: 17:21:01.896: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:107923): Gtk-WARNING **: 17:21:01.896: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:107923): Gtk-WARNING **: 17:21:01.897: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+
+(/usr/lib/firefox/firefox:107946): Gtk-WARNING **: 17:21:01.987: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:107946): Gtk-WARNING **: 17:21:01.987: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:107946): Gtk-WARNING **: 17:21:01.988: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620919262463	Marionette	INFO	Listening on port 38277
+1620919262503	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:108032): Gtk-WARNING **: 17:21:02.916: Theme parsing error: gtk.css:27:16: not a number
+
+(/usr/lib/firefox/firefox:108032): Gtk-WARNING **: 17:21:02.916: Theme parsing error: gtk.css:29:10: 'height' is not a valid property name
+
+(/usr/lib/firefox/firefox:108032): Gtk-WARNING **: 17:21:02.917: Theme parsing error: gtk.css:508:14: Junk at end of value for opacity
+1620919277209	Marionette	INFO	Stopped listening on port 38277
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
