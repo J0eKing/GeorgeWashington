@@ -63,4 +63,4 @@ async def on_message(message: discord.Message):
     print(message)
 
 TOKEN = os.getenv('TOKEN')
-bot.run("NzM1MDg1NzcxODE5NzEyNTgy.XxbH-Q.qLYkfAktZznzptoVJv5MqVnwB6o")
+bot.run(TOKEN)
