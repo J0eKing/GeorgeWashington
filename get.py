@@ -2,65 +2,51 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+link = r"https://www.epicgames.com/store/en-US/free-games"
 link_prefix = r"https://www.epicgames.com"
-link = r"https://www.epicgames.com/store/en-US/"
 
 
-def get_games():
+def get_html(link):
     chrome_options = Options()
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument("--remote-debugging-port=6667")
 
-    chrome_options.add_argument("--remote-debugging-port=6667")  # this
-    try:
-        #driver = webdriver.Chrome(options=chrome_options)
-        driver = webdriver.Firefox()
-        driver.get(link)
-        html = driver.page_source
+    driver = webdriver.Firefox()
+    driver.get(link)
 
-        soup = BeautifulSoup(html, "html.parser")
+    html = driver.page_source
+    driver.close()
+    return html
 
-        driver.close()
 
-        # with open("epic.txt", "w+") as f:
-        #    f.write(soup.prettify())
+def save_html(data):
+    with open("game", "w+") as f:
+        f.write(data)
 
-        try:
-            item = soup.findAll(
-                'a', {'aria-label': lambda x: x and x.startswith('Free Games')}
-            )[0]
 
-            curr_name = item["aria-label"]
-            curr_name = curr_name[str(curr_name).find(","):]
-            curr_name = curr_name[str(curr_name).find(",")+1:]
-            curr_name = curr_name[str(curr_name).find(",")+1:]
-            curr_name = curr_name[str(curr_name).find(",")+1:]
-            curr_name = curr_name[:str(curr_name).find(",")]
-            curr_name = str(curr_name).lstrip().rstrip()
+def parse_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+    items = soup.findAll(lambda tag: tag.name ==
+                         "span" and "Free Now" in tag.text)[0]
 
-            curr_link = link_prefix + item["href"]
+    item = items.findAll('span', {'data-testid': "offer-title-info-title"})
+    item = item[0]
+    name = item.getText()
 
-        except:
-            pass
-        next_name = "Mystery Game"
-        next_link = "Mystery Game"
-        try:
-            item2 = soup.findAll(
-                'a', {'aria-label': lambda x: x and x.startswith('Free Games')}
-            )[1]
-            next_name = item2["aria-label"]
-            next_name = next_name[str(next_name).find(","):]
-            next_name = next_name[str(next_name).find(",")+1:]
-            next_name = next_name[str(next_name).find(",")+1:]
-            next_name = next_name[str(next_name).find(",")+1:]
-            next_name = next_name[:str(next_name).find(",")]
-            next_name = str(next_name).lstrip().rstrip()
+    link = items.findAll('a', {'role': "link"})[0]
+    link = link["href"]
+    # save_html(html)
+    #print(name, link)
+    print(name, link)
+    return [name, link_prefix + link]
 
-            next_link = link_prefix + item2["href"]
-        except:
-            pass
 
-        data = [curr_name, curr_link, next_name, next_link]
-        return data
-    except:
-        return [None]
+def read_html():
+    with open("game.html", "r") as f:
+        return f.read()
+
+
+def main():
+    htm = get_html(link)
+    return parse_html(htm)
